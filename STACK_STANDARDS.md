@@ -1,8 +1,46 @@
 # Stack Standards: Vercel + Supabase Full Stack
 
-> A forkable full-stack standardization template for building applications with Vercel and Supabase.
+> A forkable full-stack standardization template for building production-quality applications with Vercel and Supabase.
 
-## Architecture Overview
+---
+
+## Repo Orientation
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                         REPO STRUCTURE ORIENTATION                          │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│   ╔═══════════════════════════════════════════════════════════════════════╗  │
+│   ║                    ISSUES = MODULES (Implementation)                  ║  │
+│   ╠═══════════════════════════════════════════════════════════════════════╣  │
+│   ║  Each issue is a MODULE containing:                                  ║  │
+│   ║  • Implementation tasks to complete                                   ║  │
+│   ║  • What needs to be built                                             ║  │
+│   ║  • Step-by-step action items                                          ║  │
+│   ║  • Links to relevant markdown documentation                           ║  │
+│   ║                                                                       ║  │
+│   ║  USE: When building a new client → Check issues for what to do       ║  │
+│   ╚═══════════════════════════════════════════════════════════════════════╝  │
+│                                                                             │
+│   ╔═══════════════════════════════════════════════════════════════════════╗  │
+│   ║                  MARKDOWNS = DATA (Reference)                          ║  │
+│   ╠═══════════════════════════════════════════════════════════════════════╣  │
+│   ║  Each markdown file contains:                                         ║  │
+│   ║  • Detailed documentation and standards                              ║  │
+│   ║  • Code examples and implementations                                  ║  │
+│   ║  • Best practices and explanations                                   ║  │
+│   ║  • Links to official resources                                       ║  │
+│   ║                                                                       ║  │
+│   ║  USE: When implementing → Read markdown for how to do it            ║  │
+│   ╚═══════════════════════════════════════════════════════════════════════╝  │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Module Index
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -54,10 +92,26 @@
 | 24 | Performance & Optimization | Caching, code splitting, indexes |
 | 25 | Testing & Quality Assurance | Unit, E2E, CI/CD |
 | 26 | Documentation & Forking Guide | How to fork and customize |
+| 27 | CompTIA Security+ SY0-701 | Security certification study guide |
+| 28 | CompTIA Network+ N10-009 | Networking certification study guide |
+| 29 | CompTIA DataSys+ DS0-001 | Database certification study guide |
+| 30 | Vercel Data Optimization & Caching | Next.js performance, SWR, edge |
+| 31 | Supabase Database Optimization | Query tuning, indexes, pooling |
+| 32 | Production Standards (CompTIA) | CompTIA-aligned production guide |
 
 ---
 
-## Quick Start
+## Markdown Files Reference
+
+| File | Purpose | Related Modules |
+|------|---------|-----------------|
+| `STACK_STANDARDS.md` | Main standards document | All 01-32 |
+| `COMPTIA_SECURITYPLUS.md` | Security+ study guide | 27 |
+| `COMPTIA_NETWORKPLUS.md` | Network+ study guide | 28 |
+| `COMPTIA_DATASYS.md` | DataSys+ study guide | 29 |
+| `VERCEL_OPTIMIZATION.md` | Vercel performance guide | 30 |
+| `SUPABASE_OPTIMIZATION.md` | Supabase performance guide | 31 |
+| `PRODUCTION_STANDARDS.md` | Production implementation | 32 |
 
 ### 1. Clone and Setup
 ```bash
@@ -80,6 +134,59 @@ npm install
 - Update STACK_STANDARDS.md for your project
 - Add project-specific modules
 - Implement features
+
+---
+
+## How to Use This Repo
+
+### For Implementation (Building a New Client):
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                         IMPLEMENTATION WORKFLOW                              │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│   1. CHECK ISSUES (GitHub)                                                 │
+│      ↓                                                                      │
+│   2. Find relevant MODULE (e.g., Module 01: Auth)                         │
+│      ↓                                                                      │
+│   3. READ ISSUE - Contains implementation tasks                            │
+│      ↓                                                                      │
+│   4. CHECK MARKDOWNS - Read for implementation details                    │
+│      ↓                                                                      │
+│   5. BUILD - Execute the implementation                                    │
+│      ↓                                                                      │
+│   6. COMPLETE - Mark issue done when finished                              │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+### For Learning/Reference:
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                            REFERENCE WORKFLOW                                │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│   1. OPEN MARKDOWNS                                                       │
+│      ↓                                                                      │
+│   2. FIND TOPIC (e.g., RLS, Caching, Security)                           │
+│      ↓                                                                      │
+│   3. READ IMPLEMENTATION GUIDE                                            │
+│      ↓                                                                      │
+│   4. APPLY TO YOUR PROJECT                                                │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+### Module Categories:
+
+| Category | Modules | Focus |
+|----------|---------|-------|
+| **Core Implementation** | 01-26 | Building the app |
+| **Certifications** | 27-29 | Study guides |
+| **Optimization** | 30-31 | Performance |
+| **Production** | 32 | Enterprise standards |
 
 ---
 
